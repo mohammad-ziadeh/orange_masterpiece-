@@ -1,0 +1,16 @@
+.body {
+  background-color: #282d30;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+}
+.main-card {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  border: solid 6px #f5a161;
+  border-radius: 68px;
+  width: 1000px;
+  height: 630px;
+  background-color: rgba(255, 255, 255, 0.05); 
+}
