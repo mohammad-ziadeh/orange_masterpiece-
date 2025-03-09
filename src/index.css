@@ -1,6 +1,13 @@
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-
+  scroll-behavior: smooth;
 }
+:root {
+  --primary-color: #3b1e54;
+  --secondary-color: #9b7ebd;
+  --light-color: #d4bee4;
+  --neutral-color: #eeeeee;
+}
+

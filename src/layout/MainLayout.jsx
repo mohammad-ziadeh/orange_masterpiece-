@@ -1,14 +1,18 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Navbar from "./navbar";
+import Footer from "./footer";
+import Hero from "./heroSection";
 
 export default function MainLayout() {
   return (
     <div>
-      <header>My App Header</header>
+      <Navbar />
+      <Hero />
       <main>
         <Outlet />
       </main>
-      <footer>My App Footer</footer>
+      <Footer />
     </div>
   );
 }
