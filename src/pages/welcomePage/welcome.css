@@ -7,15 +7,9 @@
 .body {
   background-color: var(--neutral-color);
   color: var(--primary-color);
-  height: 500vh;
 }
 
-.Hero {
-  background-image: url("./images/pexels-tirachard-kumtanom-112571-733856.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
+
 .badges {
   background-image: url("./images/badges.png");
   width: 400px;

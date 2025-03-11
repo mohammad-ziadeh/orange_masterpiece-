@@ -1,22 +1,27 @@
 import React, { lazy } from "react";
 
 // project import
-import MainLayout from "../layout/MainLayout";
-import WelcomePage from "../pages/welcomePage/welcomePage";
+import MainLayout from "../layout/studentSide/MainLayout";
+import PublicSite from "../layout/publicSide/mainContent";
 import Loadable from "../components/Loader/Loadable";
+import Login from "../pages/login";
 
 // Lazy-loaded components
-const Contact = Loadable(lazy(() => import("../pages/contact")));
-const Profile = Loadable(lazy(() => import("../pages/profile")));
-const Home = Loadable(lazy(() => import("../pages/home")));
-const Login = Loadable(lazy(() => import("../pages/login")));
+
+// -------{Public Side}------- //
+const About = Loadable(lazy(() => import("../pages/aboutPage/about")));
+const Landing = Loadable(
+  lazy(() => import("../pages/welcomePage/welcomePage"))
+);
+
+// -------{Public Side}------- //
+
+// -------{Student Side}------- //
+
+// -------{Student Side}------- //
 
 // ==============================|| MAIN ROUTES ||============================== //
 
-const Entry = {
-  path: "/",
-  element: <WelcomePage />,
-};
 const LoginRoute = {
   path: "/login",
   element: <Login />,
@@ -28,17 +33,38 @@ const MainRoutes = {
   children: [
     {
       path: "",
-      element: <Home />,
+      element: <About />,
     },
     {
-      path: "profile",
-      element: <Profile />,
+      path: "about",
+      element: <About />,
     },
     {
       path: "contact",
-      element: <Contact />,
+      element: <About />,
     },
   ],
 };
 
-export { MainRoutes, LoginRoute,Entry };
+// ########################################################
+
+const PublicSiteRoutes = {
+  path: "/",
+  element: <PublicSite />,
+  children: [
+    {
+      path: "",
+      element: <Landing />,
+    },
+    {
+      path: "about",
+      element: <About />,
+    },
+    {
+      path: "contact",
+      element: <About />,
+    },
+  ],
+};
+
+export { MainRoutes, LoginRoute, PublicSiteRoutes };

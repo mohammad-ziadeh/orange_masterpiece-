@@ -4,13 +4,8 @@ import "./welcome.css";
 // Start Reusable Parts ---------------------------------
 import Line from "../../components/reusables/Line";
 import Scroll from "../../components/reusables/motionScroll";
+import Hero from "../../components/reusables/heroSection";
 // End Reusable Parts ---------------------------------
-
-// Start Includes ---------------------------------
-import Nav from "../../include/home/navbar";
-// import Footer from "../../include/home/footer";
-
-// End Includes --------------------------------
 
 // Start Packages ---------------------------------
 import { TypeAnimation } from "react-type-animation";
@@ -22,8 +17,7 @@ export default function welcomePage() {
   return (
     <>
       <div className="body">
-        <Nav />
-        <div className="Hero"></div>
+        <Hero name=""/>
         <Line />
         <br />
         <br />

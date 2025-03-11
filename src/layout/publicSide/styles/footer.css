@@ -1,0 +1,12 @@
+:root {
+  --primary-color: #3b1e54;
+  --secondary-color: #9b7ebd;
+  --light-color: #d4bee4;
+  --neutral-color: #eeeeee;
+}
+
+.mainBody {
+  height: 300px;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}

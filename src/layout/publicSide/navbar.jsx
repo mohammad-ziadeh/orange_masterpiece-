@@ -1,9 +1,10 @@
 import React from "react";
-import './navbar.css'
+import './styles/navbar.css'
 export default function navbar() {
   return (
     <nav className="navBar">
-      <a href="/login">Login</a>
+      <a href="/">Login</a>
+      <a href="/about">Contact</a>
     </nav>
   );
 }

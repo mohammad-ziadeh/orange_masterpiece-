@@ -4,7 +4,7 @@
   top: 0;
   height: 60px;
   background-color: var(--primary-color);
-  display: grid;
+  display: flex;
   align-items: center;
   font-size: large;
   justify-content: space-around;

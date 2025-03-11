@@ -1,0 +1,10 @@
+.Hero {
+    background-image: url("./images/pexels-tirachard-kumtanom-112571-733856.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+  }
