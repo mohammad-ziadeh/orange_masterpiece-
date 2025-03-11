@@ -9,50 +9,24 @@
   color: var(--primary-color);
   height: 500vh;
 }
-.navBar {
-  color: var(--neutral-color);
-  position: sticky;
-  top: 0;
-  height: 60px;
-  background-color: var(--primary-color);
-  display: grid;
-  align-items: center;
-  font-size: large;
-  justify-content: space-around;
-}
-.navBar a {
-  color: var(--neutral-color);
-  text-decoration: none;
-}
+
 .Hero {
   background-image: url("./images/pexels-tirachard-kumtanom-112571-733856.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
-.hr-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 20px 0;
-}
-.hr-container::before,
-.hr-container::after {
-  content: "";
-  flex: 1;
-  border-bottom: 2px solid var(--light-color);
-  margin: 0 10px;
-}
-.hr-container span {
-  font-size: 18px;  /* Adjust size of the word */
-  color: var(--primary-color);
-}
-.badges{
+.badges {
   background-image: url("./images/badges.png");
   width: 400px;
   background-size: cover;
   background-position: center;
   height: 200px;
-  margin-left: 35%;
+}
+blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid var(--primary-color);
+  padding-left: 15px;
+  margin: 10px 15%;
 }
