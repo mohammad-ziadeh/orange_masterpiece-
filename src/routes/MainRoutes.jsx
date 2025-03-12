@@ -13,8 +13,9 @@ const About = Loadable(lazy(() => import("../pages/aboutPage/about")));
 const Landing = Loadable(
   lazy(() => import("../pages/welcomePage/welcomePage"))
 );
-
 // -------{Public Side}------- //
+
+
 
 // -------{Student Side}------- //
 

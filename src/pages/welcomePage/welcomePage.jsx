@@ -51,6 +51,7 @@ export default function welcomePage() {
             justifyItems: "center",
           }}
         >
+          <br />
           <h2>Encouraging Active Engagement Among Students</h2>
           <br />
           <br />

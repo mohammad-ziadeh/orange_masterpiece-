@@ -12,6 +12,36 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 1px 15px rgba(0, 0, 0, 0.2);
 }
 .navBar a {
-  color: var(--neutral-color);
+  position: relative;
   text-decoration: none;
+  color: var(--neutral-color);
 }
+
+.navBar a::after {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  background-color: var(--light-color);
+  transition: width 0.3s;
+}
+
+.navBar a:hover::after {
+  width: 100%;
+}
+/* .navBar a::before {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  right: 0;
+  bottom: -2px;
+  width: 0;
+  background-color: var(--light-color);
+  transition: width 0.5s ease;
+}
+
+.navBar a:hover::before {
+  width: 100%;
+} */

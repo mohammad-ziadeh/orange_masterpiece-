@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function ScrollBackgroundColor() {
   useLayoutEffect(() => {
-    gsap.to(".body", {
+    gsap.to(".mainBody", {
       backgroundColor: "#3B1E54", // New background color
       scrollTrigger: {
         trigger: "body", // Body is the trigger for the scroll

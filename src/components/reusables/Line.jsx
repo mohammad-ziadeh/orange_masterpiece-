@@ -1,9 +1,9 @@
 import React from "react";
 import "./line.css";
-export default function Line() {
+export default function Line({color}) {
   return (
     <div className="hr-container">
-      <span>★★★</span>
+      <span style={{color}}>★★★</span>
     </div>
   );
 }
