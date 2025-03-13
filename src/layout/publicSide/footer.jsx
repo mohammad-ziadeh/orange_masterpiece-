@@ -5,7 +5,6 @@ import { colors, styled } from "@mui/material";
 export default function Footer() {
   return (
     <section className="mainBody">
-      <hr/>
       <br />
       <br />
       <footer className="footer">

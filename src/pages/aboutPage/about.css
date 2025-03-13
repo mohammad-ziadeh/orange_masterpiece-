@@ -8,7 +8,7 @@
   text-align: center;
   cursor: pointer;
   font-family: Arial, sans-serif;
-  margin-top: 50px;
+  margin-bottom: 50px;
   height: 300px;
 }
 
@@ -39,7 +39,7 @@
 .word {
   font-size: 24px;
   font-weight: bold;
-  color: var(--secondary-color);
+  color: #694d89;
 }
 
 .WhyContainer {
@@ -84,7 +84,8 @@
   }
 }
 .start {
-  height: 500vh;
+  margin: 0%;
+  padding: 0%;
 }
 .picContainer {
   display: grid;
@@ -125,4 +126,10 @@
   height: 300px;
   background-size: cover;
   background-position: center;
+}
+.picMidWord {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }

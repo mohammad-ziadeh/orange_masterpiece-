@@ -18,14 +18,22 @@ const LMCExpand = () => {
   // ----//-{BackGroundColorChange}-//---- //
   useLayoutEffect(() => {
     gsap.to(".start", {
-      backgroundColor: "#3b1e54", // Changes background color
-      color: "#eeeeee", // Changes text color inside .start
+      backgroundColor: "#3b1e54",
+      color: "#eeeeee",
       scrollTrigger: {
-        trigger: ".start", // Triggers animation when .WhyContainer is in view
-        start: "top+=600vh top", // Start when .WhyContainer's top reaches the top of the viewport
-        end: "bottom bottom", // End when .WhyContainer's bottom reaches the bottom
-        scrub: 1, // Smooth transition
-        markers: true, // Debugging markers (remove in production)
+        trigger: ".start",
+        start: "top+=700vh top",
+        end: "bottom bottom",
+        scrub: 1,
+        markers: true,
+      },
+    });
+  }, []);
+  useLayoutEffect(() => {
+    gsap.to(".start", {
+      scrollTrigger: {
+        trigger: ".start",
+        start: "top+=250vh top",
         onEnter: () => setExpanded(true),
       },
     });
@@ -41,7 +49,7 @@ const LMCExpand = () => {
           onClick={() => setExpanded(!expanded)}
           whileTap={{ scale: 0.9 }}
         >
-          <p style={{ fontSize: "14px", padding: "0" }}>click me</p>
+          <p style={{ fontSize: "14px", padding: "0px" }}>click me</p>
           What does{" "}
           <span style={{ textDecoration: "underline", fontWeight: "bold" }}>
             LMC
@@ -82,12 +90,50 @@ const LMCExpand = () => {
         </AnimatePresence>
       </div>
       <Line color="#3b1e54" />
+      {/* start of pic section  */}
       <div className="picContainer">
-        <div className="pic1"></div>
-        <div className="pic2"></div>
-        <div className="pic3"></div>
-        <div className="pic4"></div>
+        <ScrollAnimation
+          animateIn="fadeIn"
+          animateOnce={true}
+          duration={1.6}
+          initiallyVisible={false}
+          className="pic1"
+        >
+          <div></div>
+        </ScrollAnimation>
+        <h3 className="picMidWord">Encouraging</h3>
+        <ScrollAnimation
+          animateIn="fadeIn"
+          animateOnce={true}
+          duration={1.6}
+          initiallyVisible={false}
+          className="pic2"
+          delay={500}
+        >
+          <div></div>
+        </ScrollAnimation>
+        <h3 className="picMidWord">Support</h3>
+        <ScrollAnimation
+          animateIn="fadeIn"
+          animateOnce={true}
+          duration={1.6}
+          initiallyVisible={false}
+          className="pic3"
+        >
+          <div></div>
+        </ScrollAnimation>
+        <h3 className="picMidWord">Engaging</h3>
+        <ScrollAnimation
+          animateIn="fadeIn"
+          animateOnce={true}
+          duration={1.6}
+          initiallyVisible={false}
+          className="pic4"
+        >
+          <div></div>
+        </ScrollAnimation>
       </div>
+      {/* end of pic section  */}
       <section className="WhyContainer">
         <br />
         <h2 className="head">Why LMC?</h2>
@@ -149,7 +195,9 @@ const LMCExpand = () => {
           </div>
         </ScrollAnimation>
       </section>
-      <Line color="#eeeeee" />
+      {/* end line */}
+      <Line color="#eeeeee" margin="0px" />
+      {/* end line */}
     </div>
   );
 };
