@@ -15,20 +15,6 @@ gsap.registerPlugin(ScrollTrigger);
 const LMCExpand = () => {
   const [expanded, setExpanded] = useState(false);
 
-  // ----//-{BackGroundColorChange}-//---- //
-  useLayoutEffect(() => {
-    gsap.to(".start", {
-      backgroundColor: "#3b1e54",
-      color: "#eeeeee",
-      scrollTrigger: {
-        trigger: ".start",
-        start: "top+=700vh top",
-        end: "bottom bottom",
-        scrub: 1,
-        markers: true,
-      },
-    });
-  }, []);
   useLayoutEffect(() => {
     gsap.to(".start", {
       scrollTrigger: {
@@ -41,7 +27,17 @@ const LMCExpand = () => {
 
   return (
     <div className="start">
-      <Hero name="About Us" />
+      <h1
+        style={{
+          marginTop: "-380px",
+          zIndex: "300",
+          marginLeft: "44%",
+          height: "70vh",
+        }}
+      >
+        About Us
+      </h1>
+
       <Line />
       <div className="container">
         <motion.h1
@@ -132,11 +128,41 @@ const LMCExpand = () => {
         >
           <div></div>
         </ScrollAnimation>
+        <h3 className="picMidWord" style={{ fontSize: "40px" }}>
+          LMC
+        </h3>
+        <ScrollAnimation
+          animateIn="fadeIn"
+          animateOnce={true}
+          duration={1.6}
+          initiallyVisible={false}
+          className="pic5"
+        >
+          <div></div>
+        </ScrollAnimation>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       {/* end of pic section  */}
       <section className="WhyContainer">
         <br />
-        <h2 className="head">Why LMC?</h2>
+        <ScrollAnimation
+          animateIn="fadeIn"
+          animateOnce={false}
+          duration={1}
+          initiallyVisible={false}
+          className="topP"
+        >
+          <h2 className="head">Why LMC?</h2>
+        </ScrollAnimation>
+        <br />
+        <br />
         <br />
         <ScrollAnimation
           animateIn="fadeIn"
@@ -195,9 +221,7 @@ const LMCExpand = () => {
           </div>
         </ScrollAnimation>
       </section>
-      {/* end line */}
-      <Line color="#eeeeee" margin="0px" />
-      {/* end line */}
+      <Line />
     </div>
   );
 };

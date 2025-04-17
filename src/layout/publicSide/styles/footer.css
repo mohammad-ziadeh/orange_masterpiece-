@@ -1,12 +1,12 @@
 :root {
-  --primary-color: #3b1e54;
+  --primary-color: #321947;
   --secondary-color: #9b7ebd;
   --light-color: #d4bee4;
   --neutral-color: #eeeeee;
 }
 
 .mainBody {
-  background-color: var(--primary-color);
+  background-color: #321947;
   color: var(--neutral-color);
 }
 
@@ -58,7 +58,7 @@
 }
 
 .footer {
-  background-color: var(--primary-color);
+  background-color: #321947;
   color: var(--neutral-color);
   text-align: center;
   padding: 20px 0;

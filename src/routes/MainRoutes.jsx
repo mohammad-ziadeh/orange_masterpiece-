@@ -10,12 +10,12 @@ import Login from "../pages/login";
 
 // -------{Public Side}------- //
 const About = Loadable(lazy(() => import("../pages/aboutPage/about")));
-const Landing = Loadable(
-  lazy(() => import("../pages/welcomePage/welcomePage"))
-);
+const Landing = Loadable(lazy(() => import("../pages/welcomePage/welcomePage")));
+
+//import Landing from "../components/loadingPage/loadingPage"
 // -------{Public Side}------- //
 
-
+// #################################################################
 
 // -------{Student Side}------- //
 

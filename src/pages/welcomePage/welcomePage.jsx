@@ -5,6 +5,7 @@ import "./welcome.css";
 import Line from "../../components/reusables/Line";
 import Scroll from "../../components/reusables/motionScroll";
 import Hero from "../../components/reusables/heroSection";
+import Video from "./welcomeVideo";
 // End Reusable Parts ---------------------------------
 
 // Start Packages ---------------------------------
@@ -17,7 +18,6 @@ export default function welcomePage() {
   return (
     <>
       <div className="body">
-        <Hero name=""/>
         <Line />
         <br />
         <br />
@@ -43,6 +43,8 @@ export default function welcomePage() {
         <br />
         <br />
         <br />
+        {/* <Line />
+        <Video /> */}
         <Line />
         <section
           style={{
