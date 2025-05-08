@@ -5,6 +5,7 @@ export default function navbar() {
     <nav className="navBar">
       <a href="/">Home</a>
       <a href="/about">About</a>
+      <a href="http://localhost:8000/login">Log in</a>
     </nav>
   );
 }
